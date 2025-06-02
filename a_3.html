@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>양치를 안 하면?</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 20px;
+      color: #002233;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ddd;
+      border: 2px solid red;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .left-box {
+      width: 150px;
+      border: 2px solid red;
+      padding: 10px;
+    }
+
+    .center-box {
+      flex: 1;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #right {
+      width: 650px;
+      background-color: #252525;
+      float: left;
+    }
+
+    #main_title {
+      width: 572px;
+      padding: 10px;
+      border: solid 5px #444444;
+      margin: 24px 0 0 24px;
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    #main_img {
+      padding: 15px 0 0 24px;
+      display: block;
+      width: 600px;
+      height: 300px;
+    }
+
+    #thumnail {
+      padding: 30px 0 0 70px;
+    }
+
+    #thumnail #move_left {
+      float: left;
+      margin: 20px 5px 0 40px;
+    }
+
+    #thumnail #photos {
+      float: left;
+      margin: 3px 0 0 0;
+    }
+
+    #thumnail #move_right {
+      float: left;
+      margin: 20px 0 0 20px;
+    }
+
+    #thumnail #photos li {
+      display: inline;
+      margin-left: 10px;
+    }
+
+    #thumnail #photos img {
+      border: solid 5px #3d3d3d;
+      width: 70px;
+      height: 50px;
+    }
+
+    #thumnail #photos a:hover img {
+      border: solid 5px #ffffff;
+    }
+
+    #photo-box {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery-content {
+      display: flex;
+      gap: 20px;
+    }
+
+    #info_box {
+      width: 800px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    footer {
+      border: 2px solid red;
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .left-box {
+        width: 100%;
+      }
+
+      #photo-box {
+        flex-direction: column;
+      }
+
+      #info_box {
+        width: 100%;
+      }
+
+      #right {
+        width: 100%;
+      }
+
+      #main_img {
+        width: 100%;
+        height: auto;
+      }
+
+      #main_title {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><strong>양치를 안 하면?</strong></h1>
+
+  <div class="top-bar">
+    <nav>
+      <a href="a.html">양치를 안 하면?</a>
+      <a href="b.html">양치의 긍정적인 효과</a>
+      <a href="c.html">올바른 양치법</a>
+      <a href="d.html">하루 3번 챌린지</a>
+      <a href="e.html">양치 퀴즈</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <main>
+      <div class="left-box">
+        <p>충치</p>
+      </div>
+
+      <div class="center-box">
+        <h3>충치</h3>
+
+        <div id="photo-box" class="gallery-content">
+          
+          <div id="right">
+            <div id="main_title">충치 사진</div>
+            <img id="main_img" src="cavity3.jpg" alt="충치 사진">
+            <div id="thumnail">
+              <a href="a_2.html"><img id="move_left" src="move_left.png" width="20px" height="30px" alt="이전"></a>
+              <ul id="photos">
+                <li><a href="a.html"><img src="cavity1.jpg" alt="cavity2"></a></li>
+                <li><a href="a_2.html"><img src="cavity2.jpg" alt="cavity3"></a></li>
+                <li><a href="a_4.html"><img src="cavity4.jpg" alt="cavity4"></a></li>
+                <li><a href="a_5.html"><img src="cavity5.jpg" alt="cavity5"></a></li>
+              </ul>
+              <a href="a_4.html"><img id="move_right" src="move_right.png" width="20px" height="30px" alt="다음"></a>
+            </div>
+          </div>
+
+          <div id="info_box">
+            <h2>충치란?</h2>
+            <p>
+              충치는 박테리아에 의해 만들어진 산성 물질로 인해 치아가 파열되는 질병입니니다.
+              <br>충치는 노란색에서 검은색까지 다양한 색상을 가질 수 있으며 주요 증상에는 치통이 있습니다.
+              <br>충치를 예방하기 위해서는 규칙적인 칫솔질, 당분 함량이 낮은 식사 등이 필요합니다.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 양치의 중요성 웹사이트</p>
+  </footer>
+
+</body>
+</html>

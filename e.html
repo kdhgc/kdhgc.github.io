@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>양치 퀴즈</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 20px;
+      color: #002233;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ddd;
+      border: 2px solid red;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .quiz-box {
+      border: 1px solid black;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .quiz-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .question-text {
+      min-width: 200px;
+      font-weight: bold;
+      flex: 1;
+    }
+
+    .answer-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .answer-label {
+      min-width: 40px;
+      text-align: center;
+    }
+
+    .answer-input {
+      width: 150px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid #333;
+      background-color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    footer {
+      border: 2px solid red;
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .quiz-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .answer-wrapper {
+        justify-content: flex-end;
+      }
+
+      .answer-input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><strong>양치 퀴즈</strong></h1>
+
+  <div class="top-bar">
+    <nav>
+      <a href="a.html">양치를 안 하면?</a>
+      <a href="b.html">양치의 긍정적인 효과</a>
+      <a href="c.html">올바른 양치법</a>
+      <a href="d.html">하루 3번 챌린지</a>
+      <a href="e.html">양치 퀴즈</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="quiz-box">
+      <div class="quiz-row">
+        <div class="question-text">문제 1: 올바른 양치 시간은 몇 분일까요?</div>
+        <div class="answer-wrapper">
+          <div class="answer-label">정답</div>
+          <input type="text" class="answer-input" placeholder="정답을 입력하세요">
+        </div>
+      </div>
+      <div class="quiz-row">
+        <div class="question-text">문제 2: 하루 몇 번 양치를 해야 할까요?</div>
+        <div class="answer-wrapper">
+          <div class="answer-label">정답</div>
+          <input type="text" class="answer-input" placeholder="정답을 입력하세요">
+        </div>
+      </div>
+      <div class="quiz-row">
+        <div class="question-text">문제 3: 양치하지 않으면 생기는 질병은?</div>
+        <div class="answer-wrapper">
+          <div class="answer-label">정답</div>
+          <input type="text" class="answer-input" placeholder="정답을 입력하세요">
+        </div>
+      </div>
+      <div class="quiz-row">
+        <div class="question-text">문제 4: 올바른 양치 순서 중 마지막 단계는?</div>
+        <div class="answer-wrapper">
+          <div class="answer-label">정답</div>
+          <input type="text" class="answer-input" placeholder="정답을 입력하세요">
+        </div>
+      </div>
+
+      <br><br><a href="answer.html" class="submit-btn">정답 확인하기</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 양치의 중요성 웹사이트</p>
+  </footer>
+</body>
+</html>
+

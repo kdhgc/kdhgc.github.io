@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하루 3번 챌린지</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin: 20px;
+      color: #002233;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ddd;
+      border: 2px solid red;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .content-box {
+      border: 1px solid black;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .content-box h3 {
+      margin-top: 0;
+    }
+
+    .input-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .input-group input[type="text"] {
+      flex: 1;
+      min-width: 150px;
+      padding: 5px;
+    }
+
+    .checkbox-group label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer {
+      border: 2px solid red;
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .input-group {
+        flex-direction: column;
+      }
+
+      .input-group input[type="text"],
+      .input-group button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1><strong>하루 3번 챌린지</strong></h1>
+
+  <div class="top-bar">
+    <nav>
+      <a href="a.html">양치를 안 하면?</a>
+      <a href="b.html">양치의 긍정적인 효과</a>
+      <a href="c.html">올바른 양치법</a>
+      <a href="d.html">하루 3번 챌린지</a>
+      <a href="e.html">양치 퀴즈</a>
+    </nav>
+  </div>
+
+  <div class="container">
+  <div class="content-box">
+    <h3> 하루 3번 챌린지</h3>
+    <p style="font-size: 15px; color: #444;">오늘도 양치 잘했는지 체크해보세요</p>
+
+    <div class="checkbox-group">
+      <label class="checkbox-item">
+        <input type="checkbox"> 아침
+      </label>
+      <label class="checkbox-item">
+        <input type="checkbox"> 점심
+      </label>
+      <label class="checkbox-item">
+        <input type="checkbox">  저녁
+      </label>
+    </div>
+
+    <p style="font-size: 14px; color: gray; margin-top: 15px;">
+      양치를 할 때마다 체크해보면 하루 습관 만들기에 도움이 됩니다 <a href="result.html" class="submit-btn">확인</a>
+    </p>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2025 양치의 중요성 웹사이트</p>
+  </footer>
+</body>
+</html>
+
